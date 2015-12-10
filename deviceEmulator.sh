@@ -69,7 +69,7 @@ function configure(){
 	clear
 	chmod 600 .settings
 	nano .settings
-	chmod 400 .settings
+        chmod 400 .settings	
 	menu
 
 }
@@ -108,7 +108,7 @@ function startFlow {
 		sleep $interval
 		counter=$((counter + $interval))
 		echo "Polled $counter seconds"	
-		accessTokenResponse=$(curl -d client_id=SetTopBox -d client_secret=Passw0rd -d grant_type=http://oauth.net/grant_type/device/1.0 -d code=$device_code "$OPENAM_URL/oauth2/access_token")
+		accessTokenResponse=$(curl -s -d client_id=$CLIENT_ID -d client_secret=$CLIENT_SECRET -d grant_type=http://oauth.net/grant_type/device/1.0 -d code=$device_code "$OPENAM_URL/oauth2/access_token")
 		echo 
 		echo $accessTokenResponse | jq .
 		#Check if access_token has been sent back or not
