@@ -10,7 +10,16 @@ Create OAuth2/OIDC client in OpenAM with appropriate scopes.
 <br/>
 <b>To Run</b>
 <br/>
-Run ./deviceEmulator.sh.  Choose option C to configure the appropriate client secrets from the main menu.  Select 1 to start flow and follow instructions.
+Run ./deviceEmulator.sh.  Choose option C to configure the appropriate client secrets from the main menu.
+<br/>
+NOTE: Pressing C creates .settings file. This file should contain following variables:
+CLIENT_ID="substitute with your own"
+CLIENT_SECRET="substitute with your own"
+OPENAM_URL="substitute with your own"
+RESPONSE_TYPE="token"
+SCOPE="substitute with your own"
+<br/>
+Select 1 to start flow and follow instructions.
 <br/>
 <br/>
 Use as-is no warranties.  OpenAM 13.0 (nightlies or Enterprise) required.  JQ JSON parser is also assumed to be present - https://stedolan.github.io/jq/download/
