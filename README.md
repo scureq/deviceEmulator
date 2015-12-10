@@ -12,13 +12,11 @@ Create OAuth2/OIDC client in OpenAM with appropriate scopes.
 <br/>
 Run ./deviceEmulator.sh.  Choose option C to configure the appropriate client secrets from the main menu.
 <br/>
-NOTE: Pressing C creates .settings file. This file should contain following variables:
 <br/>
-CLIENT_ID="substitute with your own"
-CLIENT_SECRET="substitute with your own"
-OPENAM_URL="substitute with your own"
-RESPONSE_TYPE="token"
-SCOPE="substitute with your own"
+*NOTE*: Pressing C creates .settings file. This file should contain following variables:
+<br/>
+`CLIENT_ID="substitute with your own"`<br/>`CLIENT_SECRET="substitute with your own"`<br/>`OPENAM_URL="substitute with your own"`<br/>`RESPONSE_TYPE="token"`<br/>`SCOPE="substitute with your own"<br/>`
+<br/>
 <br/>
 Select 1 to start flow and follow instructions.
 <br/>
